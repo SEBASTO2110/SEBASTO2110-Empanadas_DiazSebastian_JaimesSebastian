@@ -1,6 +1,6 @@
 [
     {
-        "nombre": "peperoni",
+        "nombre": "criolla",
         "precio": "10000"
     },
     {
@@ -12,7 +12,7 @@
         "precio": "20000"
     },
     {
-        "nombre": "carne",
-        "precio": "5000"
+        "nombre": "queso",
+        "precio": "4000"
     }
 ]
