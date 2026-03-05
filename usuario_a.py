@@ -30,7 +30,7 @@ def agregar_empanada():
     nombre = input("Nombre de la empanada: ")
     precio = input("Precio: ")
 
-        nueva = {
+    nueva = {
         "nombre": nombre,
         "precio": precio
     }
