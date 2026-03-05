@@ -11,4 +11,15 @@ def cargar_empanadas():
 
 def guardar_empanadas(empanadas):
     with open(ARCHIVO, "w") as archivo:
-        json.dump(empanadas, archivo, indent=4)
+        json.dump(empanadas, archivo, indent=4)}
+
+def listar_empanadas():
+    empanadas = cargar_empanadas()
+
+    if len(empanadas) == 0:
+        print("No hay empanadas registradas.")
+        return
+
+        
+    for i, emp in enumerate(empanadas, start=1):
+        print(f"{i}. {emp['nombre']} - ${emp['precio']}")        
