@@ -29,3 +29,13 @@ def agregar_empanada():
 
     nombre = input("Nombre de la empanada: ")
     precio = input("Precio: ")
+
+        nueva = {
+        "nombre": nombre,
+        "precio": precio
+    }
+
+    empanadas.append(nueva)
+    guardar_empanadas(empanadas)
+
+    print("Empanada agregada correctamente.")
