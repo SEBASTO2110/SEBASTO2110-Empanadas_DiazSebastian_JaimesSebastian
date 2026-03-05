@@ -37,3 +37,10 @@ def eliminar_empanada():
         print(f"{i}. {emp['nombre']} - ${emp['precio']}")
 
     opcion = int(input("Seleccione la empanada a eliminar: ")) - 1
+
+    empanadas.pop(opcion)
+
+    guardar_empanadas(empanadas)
+
+    print("Empanada eliminada.")
+    
