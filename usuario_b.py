@@ -43,4 +43,6 @@ def eliminar_empanada():
     guardar_empanadas(empanadas)
 
     print("Empanada eliminada.")
-    
+
+def salir():
+    print("Gracias por usar el sistema.")
