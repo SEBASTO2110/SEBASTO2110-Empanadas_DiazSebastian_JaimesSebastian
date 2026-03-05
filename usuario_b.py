@@ -38,16 +38,24 @@ def editar_empanada():
 def eliminar_empanada():
     empanadas = cargar_empanadas()
 
-    for i, emp in enumerate(empanadas, start=1):
-        print(f"{i}. {emp['nombre']} - ${emp['precio']}")
+    if len(empanadas) == 0:
+        print("No hay empanadas registradas.")
+        return
 
-    opcion = int(input("Seleccione la empanada a eliminar: ")) - 1
+    print("\nEmpanadas disponibles:")
+    for emp in empanadas:
+        print(f"{emp['nombre']} - ${emp['precio']}")
 
-    empanadas.pop(opcion)
+    nombre_buscar = input("Ingrese el nombre de la empanada a eliminar: ")
 
-    guardar_empanadas(empanadas)
+    for emp in empanadas:
+        if emp["nombre"].lower() == nombre_buscar.lower():
+            empanadas.remove(emp)
+            guardar_empanadas(empanadas)
+            print("Empanada eliminada correctamente.")
+            return
 
-    print("Empanada eliminada.")
+    print("Empanada no encontrada.")
 
 def salir():
     print("Gracias por usar el sistema.")
