@@ -19,3 +19,7 @@ def listar_empanadas():
     if len(empanadas) == 0:
         print("No hay empanadas registradas.")
         return
+
+        
+    for i, emp in enumerate(empanadas, start=1):
+        print(f"{i}. {emp['nombre']} - ${emp['precio']}")        
