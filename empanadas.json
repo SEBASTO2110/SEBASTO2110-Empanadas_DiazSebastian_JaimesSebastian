@@ -1,7 +1,7 @@
 [
     {
-        "nombre": "criolla",
-        "precio": "20000"
+        "nombre": "peperoni",
+        "precio": "10000"
     },
     {
         "nombre": "trifasica",
@@ -10,5 +10,9 @@
     {
         "nombre": "la poderosa",
         "precio": "20000"
+    },
+    {
+        "nombre": "carne",
+        "precio": "5000"
     }
 ]
