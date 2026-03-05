@@ -7,3 +7,8 @@ def cargar_empanadas():
             return json.load(archivo)
     except:
         return []
+        
+def guardar_empanadas(empanadas):
+    with open(ARCHIVO, "w") as archivo:
+        json.dump(empanadas, archivo, indent=4)
+
